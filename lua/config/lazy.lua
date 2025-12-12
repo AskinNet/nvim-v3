@@ -31,12 +31,18 @@ require("lazy").setup({
     install = { colorscheme = { "habamax" } },
     checker = { enabled = false },
     {
-        rocks = { enabled = false } -- отключить luarocks полностью
+        rocks = {
+            enabled = true,
+            hererocks = false -- использует системный luarocks
+        }                     -- отключить luarocks полностью
     }
 })
 
 -- General Settings
 local opt = vim.opt
+
+-- opts.rocks.hererocks = false
+-- opts.rocks.enabled = false
 
 -- Editor behavior
 opt.number = true       -- Show line number
