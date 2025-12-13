@@ -1,5 +1,5 @@
 --
-
+--
 -- General Settings
 local opt = vim.opt
 
@@ -19,10 +19,6 @@ opt.breakindent = true
 
 -- Always show relative line numbers
 opt.relativenumber = true
-
-
-
-
 
 -- Editor behavior
 opt.number = true       -- Show line number
