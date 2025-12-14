@@ -19,7 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "       -- Space as leader key
 vim.g.maplocalleader = "\\" -- Backslash as local leader
 
-require("config.options")
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -39,5 +38,8 @@ require("lazy").setup({
         hererocks = false -- использует системный luarocks
     }                     -- отключить luarocks полностью
 })
+
+
+require("config.options")
 
 require("config.keymaps")

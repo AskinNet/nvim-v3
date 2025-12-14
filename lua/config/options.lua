@@ -61,3 +61,6 @@ opt.foldlevelstart = 99 -- Start with all folds open
 -- Wildmenu
 opt.wildignorecase = true
 opt.wildignore = '.git,.hg,.svn,*.pyc,*.o,*.out,*.jpg,*.jpeg,*.png,*.gif,*.zip,**/tmp/**,*.DS_Store,**/node_modules/**'
+
+vim.opt.termguicolors = true
+require("bufferline").setup {}
