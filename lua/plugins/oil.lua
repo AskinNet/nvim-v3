@@ -28,15 +28,5 @@ return {
                 ["q"]    = "actions.close",  -- ← вот это добавляет выход по q:
             },
         })
-
-        -- Oil в текущем окне
-        vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Oil (current window)" })
-
-        -- Oil в левом вертикальном сплите
-        vim.keymap.set("n", "<leader>oe", function()
-            vim.cmd("vsplit")
-            vim.cmd("wincmd h") -- перейти в левый сплит
-            vim.cmd("Oil")
-        end, { desc = "Oil (left vsplit)" })
     end,
 }
